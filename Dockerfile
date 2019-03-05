@@ -14,6 +14,11 @@ RUN curl -s -L http://mirrors.ibiblio.org/apache/maven/maven-3/3.6.0/binaries/ap
 ENV PATH="/graalvm/bin:${PATH}"
 ENV JAVA_HOME="/graalvm"
 
+# Install languages for GraalVM
+RUN gu install python
+RUN gu install ruby
+RUN gu install r
+
 # Clone the POC branch
 RUN yum install -y git && yum clean all
 RUN git clone -b feature-multilingual-udfs \
@@ -31,10 +36,6 @@ ENV PATH="/ksql/bin:${PATH}"
 
 # Remove maven
 RUN rm -rf /maven
-
-# Install languages for GraalVM
-RUN gu install python
-RUN gu install ruby
 
 # Some env vars we might want to set when running the KSQL server
 ENV BOOTSTRAP_SERVERS="localhost:9092"
