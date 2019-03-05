@@ -1,4 +1,4 @@
-# docker-ksql-multilingual-udfs-poc
+# Multilingual KSQL UDF Experiment
 A POC for multilingual UDFs in KSQL
 
 ## Background
