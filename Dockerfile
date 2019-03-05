@@ -36,4 +36,11 @@ RUN rm -rf /maven
 RUN gu install python
 RUN gu install ruby
 
-CMD ["ksql-server-start", "config/ksql-server.properties"]
+
+# Some env vars we might want to set when running the KSQL server
+ENV BOOTSTRAP_SERVERS="localhost:9092"
+ENV KSQL_LISTENERS="http://localhost:8088"
+
+ADD docker-entrypoint.sh /docker-entrypoint.sh
+ENTRYPOINT ["/docker-entrypoint.sh"]
+CMD ["ksql-server-start", "/etc/ksql-server.properties"]
