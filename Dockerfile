@@ -32,4 +32,8 @@ ENV PATH="/ksql/bin:${PATH}"
 # Remove maven
 RUN rm -rf /maven
 
+# Install languages for GraalVM
+RUN gu install python
+RUN gu install ruby
+
 CMD ["ksql-server-start", "config/ksql-server.properties"]
