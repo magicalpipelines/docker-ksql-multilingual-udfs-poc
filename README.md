@@ -29,7 +29,7 @@ ___
 
 
 # Prerequisites
-- a running Kafka cluster
+- a running Kafka cluster (examples reference a bootstrap server at `localhost:9092`. update accordingly)
 - kafkacat (optional)
 
 # Demo Setup
@@ -58,7 +58,7 @@ ___
     ```
  
  - ### Create a dummy topic
-   Create a dummy topic named `api_logs`. If your cluster is configured to auto created topics, then you can skip to the next step, which will create the topic once you produce some dummy data.
+   Create a dummy topic named `api_logs`. If your cluster is configured to auto-create topics, then you can skip to the next step, which will create the topic once you produce some dummy data.
 
  - ### Produce dummy data
  
