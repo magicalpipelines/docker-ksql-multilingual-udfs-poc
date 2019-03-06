@@ -7,7 +7,7 @@ A POC for multilingual (Python, Javascript, Ruby, etc) UDFs in KSQL. The KSQL ch
 [docker]: https://hub.docker.com/r/magicalpipelines/ksql-multilingual-udfs
 
 ## Background
-While doing research for my upcoming talk at Kafka Summit London, I wanted to see if I could implement multilingual UDFs in KSQL. I was able to get this working with the help of GraalVM, but the effort is still a (fairly advanced) __work in progress__ and I'd like to coordinate with others who are either actively working on this, or who have feedback.
+I wanted to see if I could implement multilingual UDFs in KSQL. I was able to get this working with the help of GraalVM, but the effort is still a (fairly advanced) __work in progress__ and I'd like to coordinate with others who are either actively working on this, or who have feedback.
 
 The actual work is happening in [this branch][my-branch], and you're free to build that branch locally + run your own tests without the aid of the `magicalpipelines/ksql-multilingual-udfs` Docker image included here (__note:__ you'll need to run KSQL using GraalVM for multilingual UDFs to work). The reason I created this Docker image is so that others who don't have a lot of experiencing building the KSQL project / sub-projects can test this functionality out very easily. Also, those who don't have the patience to install GraalVM can instead just use this image as described in this doc.
 
