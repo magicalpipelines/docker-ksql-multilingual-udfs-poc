@@ -204,7 +204,7 @@ contact.php | php.tcatnoc
 ```
 
 # To do
-- `FROM FILE 'myudf.js` implementation?
+- `FROM FILE` implementation?
 - KLIP?
 - Test standalone mode!
 - Bug hunting / fixing
