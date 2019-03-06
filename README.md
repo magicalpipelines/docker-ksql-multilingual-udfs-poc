@@ -211,5 +211,6 @@ contact.php | php.tcatnoc
 # To do
 - `FROM FILE` implementation?
 - KLIP?
-- Test standalone mode!
+- Test headless mode!
+- Unit tests in the branch itself
 - Bug hunting / fixing
