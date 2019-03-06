@@ -157,7 +157,7 @@ Verify the output:
 ```sql
 about.html | html
 index.html | html
-contact.php | html
+contact.php | php
 ```
 
 ## Ruby
@@ -202,3 +202,9 @@ about.html | lmth.tuoba
 index.html | lmth.xedni
 contact.php | php.tcatnoc
 ```
+
+# To do
+- `FROM FILE 'myudf.js` implementation?
+- KLIP?
+- Test standalone mode!
+- Bug hunting / fixing
