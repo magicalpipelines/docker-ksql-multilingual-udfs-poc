@@ -19,17 +19,13 @@ RUN gu install python
 RUN gu install ruby
 RUN gu install r
 
-# Clone the POC branch
+# Git
 RUN yum install -y git && yum clean all
-RUN git clone -b feature-multilingual-udfs \
-    https://github.com/mitch-seymour/ksql.git \
-    /ksql
+
+ADD files/build.sh /build.sh
+RUN /build.sh
 
 WORKDIR /ksql
-
-# Build ksql
-RUN cd /ksql && \
-    time /maven/bin/mvn package -DskipTests | grep "Building.*[\d\+/\d\+\]\\|SUCCESS"
 
 # Add ksql binaries to the path
 ENV PATH="/ksql/bin:${PATH}"
