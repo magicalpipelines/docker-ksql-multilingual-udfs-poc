@@ -13,8 +13,9 @@ The actual work is happening in [this branch][my-branch], and you're free to bui
 
 ___
 
-___IMPORTANT NOTE:___ even though I've made a lot of progress with these changes, the work here should be considered experimental and incomplete at the current time. I will likely submit a KLIP that formally describes the potential syntax we may want to use for multilingual UDFs, and all of the other features / changes that we may want to include as part of this work.
+__See [KLIP-2][klip_2] for more info about the motivation behind multilingual UDFs__
 
+[klip_2]: https://github.com/confluentinc/ksql/pull/2553
 ___
 
 [my-branch]: https://github.com/confluentinc/ksql/compare/master...mitch-seymour:feature-multilingual-udfs
@@ -210,7 +211,7 @@ contact.php | php.tcatnoc
 
 # To do
 - `FROM FILE` implementation?
-- KLIP?
+- ~KLIP?~
 - Test headless mode!
 - Unit tests in the branch itself
 - Bug hunting / fixing
